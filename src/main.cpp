@@ -3,10 +3,6 @@
 
 #include <iostream>
 #include <fstream>
-#include <X11/Xlib.h>
-#include <X11/keysym.h>
-#include <X11/extensions/XTest.h>
-#include <unistd.h> // for usleep
 #include "engine.h"
 #include "inventory.h"
 
