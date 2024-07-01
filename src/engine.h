@@ -33,6 +33,7 @@ public:
                 printCommandSheet();
             } else if (c == 'q') {
                 system("clear");
+                printLogo();
             } else if (c == 's') {
                 saveGame();
             } else if (c == 'r') {
@@ -41,7 +42,13 @@ public:
                 printInventory();
             } else if (c == 'd') {
                 sellItems();
-            }  else {
+            } else if (c == 't') {
+                craftItems();
+            } else if (c == 'f') {
+                quests();
+            } else if (c == 'g') {
+                shop();
+            }   else {
                 std::cout << "" << std::endl;
             }
         }

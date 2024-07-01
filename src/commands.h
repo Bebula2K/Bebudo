@@ -10,5 +10,8 @@ void loadGame();
 void scavenge();
 void printInventory();
 void sellItems();
+void craftItems();
+void quests();
+void shop();
 
 #endif
