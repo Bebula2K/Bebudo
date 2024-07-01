@@ -25,7 +25,7 @@ public:
             std::cout << "[" << username << "]>";
             std::cin.get(c);
             if (c == 'm') {
-                printMoney();
+                printStats();
             } else if (c == 'e') {
                 system("clear");
                 break;
@@ -33,7 +33,15 @@ public:
                 printCommandSheet();
             } else if (c == 'q') {
                 system("clear");
-            } else {
+            } else if (c == 's') {
+                saveGame();
+            } else if (c == 'r') {
+                scavenge();
+            } else if (c == 'i') {
+                printInventory();
+            } else if (c == 'd') {
+                sellItems();
+            }  else {
                 std::cout << "" << std::endl;
             }
         }
