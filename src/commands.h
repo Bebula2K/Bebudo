@@ -3,5 +3,8 @@
 
 void printMoney();
 void printCommandSheet();
+void printLogo();
+void margin();
+void clearScreen();
 
 #endif

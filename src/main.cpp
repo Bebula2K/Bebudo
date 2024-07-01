@@ -3,6 +3,10 @@
 
 #include <iostream>
 #include <fstream>
+#include <X11/Xlib.h>
+#include <X11/keysym.h>
+#include <X11/extensions/XTest.h>
+#include <unistd.h> // for usleep
 #include "engine.h"
 #include "inventory.h"
 
@@ -26,14 +30,17 @@ void saveUsername() {
 
 int main(){
     system("clear");
+    printLogo();
     loadUsername();
     if (username.empty()) {
         std::cout << "Enter a username: ";
         std::cin >> username;
         saveUsername();
+        system("clear");
     } else {
         system("clear");
-        std::cout << "\n";
+        printLogo();
+        std::cout << "";
     }
     Engine engine;
     engine.waitForInput();

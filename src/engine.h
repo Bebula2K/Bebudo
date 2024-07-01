@@ -34,7 +34,7 @@ public:
             } else if (c == 'q') {
                 system("clear");
             } else {
-                std::cout << "Unknown command..." << std::endl;
+                std::cout << "" << std::endl;
             }
         }
         restoreTerminalMode();
