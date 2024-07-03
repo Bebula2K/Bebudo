@@ -86,7 +86,7 @@ void sellItems() {
         } else {
             std::cout << "Error selling item...\n";
         }
-    } else if (sellIDshop == 4) { //Sell clay bowls
+    } else if (sellIDshop == 5) { //Sell clay bowls
         std::cout << "How many do you want to sell? > ";
         if (!(std::cin >> sellAmount)) {
             std::cout << "Invalid input. Please enter a number.\n";
