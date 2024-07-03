@@ -8,7 +8,6 @@
 #include <fstream>
 #include <thread>
 #include <chrono>
-#include <random> //Muahahahahahaha
 #include <ctime>
 
 void shop() {
@@ -42,7 +41,7 @@ void shop() {
         }
 
         // Process the purchase
-        if (buyAmount >= 0.0000000003) {
+        if (buyAmount >= 0.0000000003 && money >= (buyAmount * 0.0000000003)) {
             gravelItem += buyAmount;
             money -= 0.0000000003 * buyAmount;
             std::cout << "You have bought " << buyAmount << " gravel.\n";
@@ -61,7 +60,7 @@ void shop() {
         }
 
         // Process the purchase
-        if (buyAmount >= 0.0000000010) {
+        if (buyAmount >= 0.0000000010 && money >= (buyAmount * 0.0000000010)) {
             clayItem += buyAmount;
             money -= 0.0000000010 * buyAmount;
             std::cout << "You have bought " << buyAmount << " clay.\n";
