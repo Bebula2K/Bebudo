@@ -14,5 +14,6 @@ inline int stringItem           {0};
 inline int gravelItem           {0};
 inline int clayItem             {0};
 inline int clayBowlItem         {0};
+inline int flintItem            {0};
 
 #endif
