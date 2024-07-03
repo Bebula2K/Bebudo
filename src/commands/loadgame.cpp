@@ -42,6 +42,10 @@ void loadGame() {
         std::string clayBowlItemStr;
         std::getline(infile, clayBowlItemStr);
         clayBowlItem = std::stoi(clayBowlItemStr); // Convert string to int
+
+        std::string flintItemStr;
+        std::getline(infile, flintItemStr);
+        flintItem = std::stoi(flintItemStr); // Convert string to int
         
         infile.close();
     }
