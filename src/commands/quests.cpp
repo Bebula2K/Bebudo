@@ -21,6 +21,7 @@ void quests(){
         if(stringItem >= 10 && questsDone == 0){
         questsDone++;
         stringItem -= 10;
+        money += 0.0000000010;
         std::cout << "Quest complete!\n";
     } else {
         std::cout << "Insufficient materials...\n";
@@ -29,6 +30,7 @@ void quests(){
         if(clayBowlItem >= 1 && questsDone == 1){
         questsDone++;
         clayBowlItem -= 1;
+        money += 0.0000000050;
         std::cout << "Quest complete!\n";
     } else {
         std::cout << "Insufficient materials...\n";
