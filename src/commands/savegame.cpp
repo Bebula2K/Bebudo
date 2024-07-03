@@ -23,5 +23,5 @@ void saveGame(){
         outfile << clayBowlItem << "\n";
         outfile.close();
     }
-    std::cout << "Game saved!\n";
+    std::cout << "\033[32mGame saved!\033[0m\n";
 }
