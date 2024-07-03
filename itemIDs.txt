@@ -6,3 +6,4 @@ string     -> Item ID [2] Sell value: 0.0000000005$ Buy value: N/A
 gravel     -> item ID [3] Sell value: 0.0000000002$ Buy value: 0.0000000003$
 clay       -> item ID [4] Sell value: 0.0000000007$ Buy value: 0.0000000010$
 clay bowl  -> item ID [5] Sell value: 0.0000000105$ Buy value: N/A
+flint      -> item ID [6] Sell value: 0.0000000008$ Buy value: N/A
