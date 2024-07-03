@@ -102,6 +102,22 @@ void sellItems() {
         } else {
             std::cout << "Error selling item...\n";
         }
+    } else if (sellIDshop == 6) { //Sell flint
+        std::cout << "How many do you want to sell? > ";
+        if (!(std::cin >> sellAmount)) {
+            std::cout << "Invalid input. Please enter a number.\n";
+            std::cin.clear(); // Clear error state
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Ignore invalid input
+            return; // Exit the function
+        }
+
+        if (sellAmount <= flintItem) {
+            flintItem -= sellAmount;
+            money += 0.0000000008 * sellAmount;
+            std::cout << "Sold " << sellAmount << " Of item ID " << sellIDshop << std::endl;
+        } else {
+            std::cout << "Error selling item...\n";
+        }
     } else {
         std::cout << "Args error...\n";
     }
