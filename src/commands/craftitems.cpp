@@ -18,7 +18,7 @@ void craftItems() {
     std::cout << "\nCraft items:\n";
     std::cout << "[1] String    > 10x {dust}\n";
     std::cout << "[2] Clay bowl > 10x {clay}\n";
-    std::cout << "What would you like to craft? (refer to itemIDs.txt) > ";
+    std::cout << "What would you like to craft? > ";
     if (!(std::cin >> craftSelection)) {
         std::cout << "Invalid input. Please enter a number.\n";
         std::cin.clear(); // Clear error state
