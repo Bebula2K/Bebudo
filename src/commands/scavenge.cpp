@@ -16,7 +16,7 @@ void scavenge(){
     int random_number = std::rand() % 3;
     int opt;
     std::cout << "Scavenge:\n";
-    std::cout << "[1] Dust\n";
+    std::cout << "[\033[32m1\033[0m] Dust\n";
     //std::cout << ""
     std::cout << "Enter option > ";
     std::cin >> opt;
@@ -24,10 +24,10 @@ void scavenge(){
         std::cout << "Scavenging for dust...\n";
         std::this_thread::sleep_for(std::chrono::seconds(3));
         if (random_number == 0) {
-        std::cout << "Dust obtained!\n";
+        std::cout << "\033[32mDust obtained!\033[0m\n";
         dustItem++;
         } else {
-        std::cout << "Scavenge failed...\n";
+        std::cout << "\033[31mScavenge failed...\033[0m\n";
         }
     }
 }
