@@ -10,4 +10,5 @@ void printInventory(){
     std::cout << "{\033[32mGravel\033[0m}    > " << gravelItem << "\n";
     std::cout << "{\033[32mClay\033[0m}      > " << clayItem << "\n";
     std::cout << "{\033[32mClay bowl\033[0m} > " << clayBowlItem << "\n";
+    std::cout << "{\033[32mFlint\033[0m}     > " << flintItem << "\n";
 }
