@@ -14,7 +14,8 @@ void quests(){
     std::string completeQuestOption;
     std::cout << "\nQuests:";
     std::cout << "Quests complete: " << questsDone << ".\n";
-    std::cout << "Current quest: Obtain 10 string\n";
+    std::cout << "[0] Quest: Obtain 10 string\n";
+    std::cout << "[1] Quest: Obtain 10 string\n";
     std::cout << "Complete quest? y/n > ";
     std::cin >> completeQuestOption;
     if(completeQuestOption == "y"){
